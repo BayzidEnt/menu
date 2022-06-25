@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fixed{
+    width: 1250px;
+    margin: auto;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+a{
+    text-decoration: none;
+}
+/*header-section*/ 
+.header-section {
+    background:#2980b9;
+}
+.header-menu{
+    width: 60%;
+    padding: 10px 0;
+}
+.header-logo{
+    width: 40%;
+}
+.header-logo img {
+    width: 186px;
+    padding: 5px 0;
+  }
+.header-menu Ul{
+    list-style: none;
+}
+.header-menu Ul li{
+    display: inline-block;
+}
+.header-menu Ul li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 0px 25px;
+    font-weight: 500;
+    line-height: 47px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+     transition: .5s;
+  }
+  .header-menu Ul li:hover > a{
+    background-color: white;
+    color: #2980b9;
+    border: 2px solid #2980b9;
+  }
+  /*dropdown*/ 
+  .style{
+    position: relative;
+  }
+  .style ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background-color: #34495e; 
+    border-radius: 10px; 
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    transform: scaleY(0);
+    transform-origin: top center;
+  }
+  .style:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+  }
+
+  .style ul li{
+    display: block;
+  }
+  .style ul li a{
+    display: block;
+    border: none;
+    padding: 10px 10px;
+    border: 2px solid transparent;
+
+  }
